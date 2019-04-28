@@ -1,0 +1,14 @@
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.deps.json
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.runtimeconfig.json
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.runtimeconfig.dev.json
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.dll
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.pdb
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorAssemblyInfo.cache
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorAssemblyInfo.cs
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.AssemblyInfo.cs
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorTargetAssemblyInfo.cache
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.dll
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.pdb
+C:\Users\Umut\Desktop\CityGuide\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.csprojAssemblyReference.cache
