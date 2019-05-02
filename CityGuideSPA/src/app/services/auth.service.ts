@@ -15,7 +15,7 @@ export class AuthService {
     private router: Router,
     private alertifyService: AlertifyService
   ) { }
-  path = 'https://localhost:44313/api/auth/';
+  path = 'https://localhost:5001/api/auth/';
   userToken: any;
   decodedToken: any;
   // jwtHelper = new JwtHelperService();
@@ -27,8 +27,8 @@ export class AuthService {
     this.httpClient
       .post(this.path + 'login', loginUser, { headers })
       .subscribe(data => {
-        this.saveToken(data);
-        this.userToken = data;
+        this.saveToken(data["token"]);
+        this.userToken = data["token"];
        // this.decodedToken = this.jwtHelper.decodeToken(data.toString());
         this.alertifyService.success('Sisteme giriş yapıldı');
         this.router.navigateByUrl('/city');
