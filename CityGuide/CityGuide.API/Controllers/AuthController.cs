@@ -75,7 +75,7 @@ namespace CityGuide.API.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            return Ok(tokenString);
+            return Ok(new {token = tokenString});
         }
 
 
