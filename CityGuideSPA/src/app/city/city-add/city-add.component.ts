@@ -1,4 +1,5 @@
 import { CityService } from './../../services/city.service';
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import {
   FormGroup,
@@ -14,10 +15,13 @@ import { City } from '../../models/city';
   providers: [CityService]
 })
 export class CityAddComponent implements OnInit {
-
   city: City;
   cityAddForm: FormGroup;
-  constructor(private cityService: CityService, private formBuilder: FormBuilder) { }
+  constructor(
+    private cityService: CityService,
+    private authService: AuthService,
+    private formBuilder: FormBuilder
+  ) {}
 
   createCityForm() {
     this.cityAddForm = this.formBuilder.group({
@@ -34,10 +38,8 @@ export class CityAddComponent implements OnInit {
     if (this.cityAddForm.valid) {
       this.city = Object.assign({}, this.cityAddForm.value);
       // Todo
-      // this.city.userId = this.authService.getCurrentUserId();
-      this.city.userId = 1;
+      this.city.name = this.authService.getCurrentUserId();
       this.cityService.add(this.city);
     }
   }
-
 }

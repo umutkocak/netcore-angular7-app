@@ -1,3 +1,5 @@
+// tslint:disable
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -30,7 +32,6 @@ export class CityService {
  add(city: any) {
   this.httpClient.post(this.path + 'cities/add', city).subscribe(data => {
     this.alertifyService.success('Şehir başarıyla eklendi.');
-    // tslint:disable-next-line: no-string-literal
     this.router.navigateByUrl('/cityDetail/' + data['id']);
   });
  }
