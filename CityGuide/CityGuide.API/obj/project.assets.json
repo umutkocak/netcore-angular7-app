@@ -13032,23 +13032,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Umut\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
       "projectName": "CityGuide.API",
-      "projectPath": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
-      "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13119,7 +13119,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'CloudinaryDotNet 1.0.27' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "message": "'CloudinaryDotNet 1.0.27' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v2.2' yerine '.NETFramework,Version=v4.6.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
       "libraryId": "CloudinaryDotNet",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"

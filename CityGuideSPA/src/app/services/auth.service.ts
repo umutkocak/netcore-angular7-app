@@ -28,10 +28,10 @@ export class AuthService {
       .post(this.path + 'login', loginUser, { headers })
       .subscribe(data => {
         if (data) {
-          this.saveToken(data['token']);
-          this.userToken = data['token'];
+          this.saveToken(data[this.TOKEN_KEY]);
+          this.userToken = data[this.TOKEN_KEY];
           this.decodedToken = this.getCurrentUserId();
-          this.alertifyService.success('Sisteme giriş yapıldı' + ' User ID: ' + this.jwtHelper.decodeToken(this.userToken).nameid);
+          this.alertifyService.success(this.jwtHelper.decodeToken(this.userToken).unique_name + ' hoşgeldiniz. Giriş yapıldı.');
           this.router.navigateByUrl('/city');
         }
       });
@@ -60,28 +60,13 @@ export class AuthService {
       });
   }
 
-  saveToken(token) {
+  saveToken(token: string) {
     localStorage.setItem(this.TOKEN_KEY, token);
+    console.log(this.jwtHelper.decodeToken(token));
   }
 
   logOut() {
     localStorage.removeItem(this.TOKEN_KEY);
     this.alertifyService.error('Sistemden çıkış yapıldı');
   }
-
-  // loggedIn() {
-  // return this.jwtHelper.isTokenExpired(this.TOKEN_KEY);
-  // }
-
-  // get token() {
-  //   return localStorage.getItem(this.TOKEN_KEY);
-  // }
-
-
-  // getCurrentUserId() {
-  //   return this.jwtHelper.decodeToken(this.token).nameid;
-  // }
-
-
-
 }

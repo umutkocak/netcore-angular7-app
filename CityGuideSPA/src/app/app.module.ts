@@ -13,6 +13,7 @@ import { CityDetailComponent } from './city/city-detail/city-detail.component';
 import { CityAddComponent } from './city/city-add/city-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxEditorModule } from 'ngx-editor';
+import { Ng2IziToastModule } from 'ng2-izitoast';
 
 @NgModule({
    declarations: [
@@ -29,7 +30,8 @@ import { NgxEditorModule } from 'ngx-editor';
       RouterModule.forRoot(appRoutes),
       NgxGalleryModule,
       FormsModule, ReactiveFormsModule,
-      NgxEditorModule
+      NgxEditorModule,
+      Ng2IziToastModule
    ],
    providers: [],
    bootstrap: [
