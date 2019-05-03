@@ -23,8 +23,10 @@ export class NavComponent implements OnInit {
     this.authService.logOut();
   }
 
-  // get isAuthenticated() {
-  //   return this.authService.loggedIn();
-  // }
+  get isAuthenticated() {
+    return this.authService.loggedIn();
+  }
+
+
 
 }

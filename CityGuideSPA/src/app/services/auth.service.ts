@@ -2,7 +2,7 @@ import { Register } from './../models/register';
 import { Injectable } from '@angular/core';
 import { LoginUser } from '../models/loginUser';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-// import { JwtHelperService } from '@auth0/angular-jwt';
+import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { AlertifyService } from './alertify.service';
 
@@ -18,8 +18,8 @@ export class AuthService {
   path = 'https://localhost:5001/api/auth/';
   userToken: any;
   decodedToken: any;
-  // jwtHelper = new JwtHelperService();
   TOKEN_KEY = 'token';
+  jwtHelper = new JwtHelperService();
 
   login(loginUser: LoginUser) {
     let headers = new HttpHeaders();
@@ -27,12 +27,27 @@ export class AuthService {
     this.httpClient
       .post(this.path + 'login', loginUser, { headers })
       .subscribe(data => {
-        this.saveToken(data["token"]);
-        this.userToken = data["token"];
-       // this.decodedToken = this.jwtHelper.decodeToken(data.toString());
-        this.alertifyService.success('Sisteme giriş yapıldı');
-        this.router.navigateByUrl('/city');
+        if (data) {
+          this.saveToken(data['token']);
+          this.userToken = data['token'];
+          this.decodedToken = this.getCurrentUserId();
+          this.alertifyService.success('Sisteme giriş yapıldı' + ' User ID: ' + this.jwtHelper.decodeToken(this.userToken).nameid);
+          this.router.navigateByUrl('/city');
+        }
       });
+  }
+
+
+  loggedIn() {
+    const token = localStorage.getItem('token');
+    return !this.jwtHelper.isTokenExpired(token);
+  }
+
+  getCurrentUserId() {
+    const token = localStorage.getItem('token');
+    if (token) {
+      return this.jwtHelper.decodeToken(token);
+    }
   }
 
   register(registerUser: Register) {
@@ -46,7 +61,6 @@ export class AuthService {
   }
 
   saveToken(token) {
-
     localStorage.setItem(this.TOKEN_KEY, token);
   }
 
@@ -56,7 +70,7 @@ export class AuthService {
   }
 
   // loggedIn() {
-    // return this.jwtHelper.isTokenExpired(this.TOKEN_KEY);
+  // return this.jwtHelper.isTokenExpired(this.TOKEN_KEY);
   // }
 
   // get token() {
