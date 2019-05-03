@@ -15,7 +15,7 @@ City Guide Application with Angular 7 and Net Core 2.2 API
  - CSS 3
  - Bootstrap
  - JavaScript ES 6,7+
- - AlertifyJS
+ - ng2-izitoast
  - Bootswatch
  - Angular2-JWT
  - angular-froala-wysiwyg
