@@ -18,7 +18,7 @@ export class AuthService {
     private httpClient: HttpClient,
     private router: Router,
     private alertifyService: AlertifyService
-  ) {}
+  ) { }
   path = 'https://localhost:5001/api/auth/';
   userToken: any;
   decodedToken: any;
@@ -39,7 +39,7 @@ export class AuthService {
         }
       },
       (error: any) => {
-         this.alertifyService.error(error.status + ' ' + error.statusText);
+        this.alertifyService.error(error.status + ' ' + error.statusText);
       }
     );
   }
@@ -72,7 +72,14 @@ export class AuthService {
     headers = headers.append('Content-Type', 'application/json');
     this.httpClient
       .post(this.path + 'register', registerUser, { headers })
-      .subscribe(data => {});
+      .subscribe(
+        (data: Response) => {
+          this.alertifyService.success('Kayıt işleminiz başarıyla gerçekleştirilmiştir.');
+        },
+        (error: any) => {
+          this.alertifyService.error(error.status + ' ' + error.statusText);
+        }
+      );
   }
 
   saveToken(token: string) {

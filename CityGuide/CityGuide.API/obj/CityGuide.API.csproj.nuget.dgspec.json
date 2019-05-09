@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj": {}
+    "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj": {
+    "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
         "projectName": "CityGuide.API",
-        "projectPath": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\netcore-angular7-app\\CityGuide\\CityGuide.API\\obj\\",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\CityGuide.API.csproj",
+        "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\CityGuide\\CityGuide\\CityGuide.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

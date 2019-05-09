@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { CityAddComponent } from './city/city-add/city-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxEditorModule } from 'ngx-editor';
 import { Ng2IziToastModule } from 'ng2-izitoast';
+import { RegisterComponent } from './register/register.component';
+import { PhotoComponent } from './photo/photo.component';
 
 @NgModule({
    declarations: [
@@ -21,7 +24,9 @@ import { Ng2IziToastModule } from 'ng2-izitoast';
       NavComponent,
       CityComponent,
       CityDetailComponent,
-      CityAddComponent
+      CityAddComponent,
+      RegisterComponent,
+      PhotoComponent
    ],
    imports: [
       BrowserModule,
@@ -29,9 +34,11 @@ import { Ng2IziToastModule } from 'ng2-izitoast';
       HttpClientModule,
       RouterModule.forRoot(appRoutes),
       NgxGalleryModule,
-      FormsModule, ReactiveFormsModule,
+      FormsModule,
+      ReactiveFormsModule,
       NgxEditorModule,
-      Ng2IziToastModule
+      Ng2IziToastModule,
+      FileUploadModule
    ],
    providers: [],
    bootstrap: [
