@@ -73,6 +73,7 @@ namespace CityGuide.API
                 app.UseHsts();
             }
             app.UseCors(x=> x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

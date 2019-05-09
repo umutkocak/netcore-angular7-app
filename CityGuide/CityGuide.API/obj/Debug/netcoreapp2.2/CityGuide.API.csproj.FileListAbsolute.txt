@@ -17,7 +17,6 @@ C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\bin\Debug\net
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.runtimeconfig.dev.json
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.dll
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\bin\Debug\netcoreapp2.2\CityGuide.API.pdb
-C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.csprojAssemblyReference.cache
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorAssemblyInfo.cache
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorAssemblyInfo.cs
@@ -26,3 +25,4 @@ C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\net
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.RazorTargetAssemblyInfo.cache
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.dll
 C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.pdb
+C:\Users\User\Desktop\netcore-angular7-app\CityGuide\CityGuide.API\obj\Debug\netcoreapp2.2\CityGuide.API.csprojAssemblyReference.cache
